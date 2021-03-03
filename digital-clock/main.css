@@ -1,0 +1,45 @@
+@font-face {
+  font-family: digiClock;
+  src: url(./fonts/DS-DIGII.TTF);
+}
+
+body {
+  font-family: digiClock;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
+  color: white;
+}
+
+.watch-container .time {
+  font-size: 18rem;
+  width: 80%;
+}
+
+.watch-container .meridiem {
+  font-size: 5rem;
+  float: right;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .watch-container .time {
+    font-size: 10rem;
+  }
+
+  .watch-container .meridiem {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .watch-container .time {
+    font-size: 5rem;
+  }
+
+  .watch-container .meridiem {
+    font-size: 2rem;
+  }
+}
